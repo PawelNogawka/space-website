@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo">logo</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link link-animation">about</a>
+          </li>
+          <li class="nav__item link-animation">
+            <a href="#missions" class="nav__link">missions</a>
+          </li>
+          <li class="nav__item">
+            <a href="#gallery" class="nav__link link-animation">gallery</a>
+          </li>
+          <li class="nav__item">
+            <a href="#faq" class="nav__link link-animation">FAQ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link link-animation">contact</a>
+          </li>
+        </ul>
+        <button class="nav__btn">
+          <span class="nav__line nav__line--1"></span>
+          <span class="nav__line nav__line--2"></span>
+        </button>
+      </nav>
+    </header>
+    <section class="home">
+      <video autoplay loop muted plays-inline class="home__video">
+        <source src="./dist/images/spaceship.mp4" type="video/mp4" />
+      </video>
+      <div class="home__banner">
+        <h1 class="home__heading">explore mars</h1>
+        <p class="home__info">Lorem ipsum dolor sit amet.</p>
+        <a href="#about" class="home__btn btn-animation">explore</a>
+      </div>
+    </section>
+    <main class="main">
+      <section id="about" class="about section-padding">
+        <h2 class="section-heading">about us</h2>
+        <div class="wrapper">
+          <div class="about__container">
+            <div class="about__earth">
+              <div class="about__day"></div>
+              <div class="about__night"></div>
+            </div>
+            <div class="about__content">
+              <p class="about__info-big">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                adipisci sit molestias earum saepe, impedit soluta neque, et
+                assumenda doloremque dicta! Dolor, ipsum iusto! Lorem ipsum
+                dolor sit amet.
+              </p>
+              <div class="about__info-small">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi sequi, laborum obcaecati voluptas et odio consequuntur
+                nisi dolores, nihil cupiditate ad architecto iste. Expedita
+                corrupti culpa delectus sed quos id odit! Magni dolores dicta
+                culpa illo tempore id ex dolor? Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Sit veniam temporibus
+                necessitatibus eaque!
+              </div>
+            </div>
+          </div>
+          <div class="about__counter">
+            <div class="about__counter-tile">
+              <i class="fa-solid fa-satellite-dish"></i>
+              <h3 class="about__ammount" data-target="50">0</h3>
+              <p class="about__name">research stations</p>
+            </div>
+            <div class="about__counter-tile">
+              <i class="fa-sharp fa-solid fa-rocket"></i>
+              <h3 class="about__ammount" data-target="100">0</h3>
+              <p class="about__name">missions completed</p>
+            </div>
+            <div class="about__counter-tile">
+              <i class="fa-solid fa-earth-americas"></i>
+              <h3 class="about__ammount" data-target="60">0</h3>
+              <p class="about__name">discovered planets</p>
+            </div>
+            <div class="about__counter-tile">
+              <i class="fa-solid fa-user-astronaut"></i>
+              <h3 class="about__ammount" data-target="80">0</h3>
+              <p class="about__name">astronauts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-padding hero">
+        <h2 class="section-heading section-heading--big">explore mars</h2>
+        <div class="wrapper">
+          <div class="hero__info">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            rerum ea dolorem architecto cumque amet esse doloribus quaerat quod
+            quo ratione dicta quis quia, necessitatibus nemo harum alias
+            excepturi minima eos consequuntur dolore, nobis nihil! Perferendis
+            facere harum obcaecati quos in nesciunt vel accusamus, earum quae,
+            aspernatur, atque velit nostrum.
+          </div>
+        </div>
+      </section>
+      <section id="missions" class="missions section-padding">
+        <h2 class="section-heading">our missions</h2>
+        <div class="wrapper">
+          <div class="missions__box">
+            <div class="missions__left">
+              <img
+                src="./dist/images/mission1.jpg"
+                alt="space missions"
+                class="missions__img"
+              />
+            </div>
+            <div class="missions__right">
+              <div class="missions__progress-bar"></div>
+              <h3 class="missions__title">we want to colonize mars</h3>
+              <p class="missions__info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
+                rerum sunt qui quia ullam, perspiciatis accusantium delectus
+                fugit aperiam ipsam eaque dolorem temporibus explicabo corporis.
+              </p>
+              <button class="missions__btn btn-animation">read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery section-padding">
+        <h2 class="section-heading section-heading--z">gallery</h2>
+        <div class="wrapper">
+          <div class="gallery__container">
+            <div class="gallery__slide gallery__slide--1 active"></div>
+            <div class="gallery__slide gallery__slide--2"></div>
+            <div class="gallery__slide gallery__slide--3"></div>
+            <div class="gallery__slide gallery__slide--4"></div>
+            <button class="gallery__btn gallery__btn--left">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="gallery__btn gallery__btn--right">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="faq" class="faq section-padding">
+      <h2 class="section-heading">faq</h2>
+      <div class="wrapper">
+        <div class="faq__container">
+          <div class="faq__tile-box">
+            <div class="faq__tile">
+              <h3 class="faq__question">what year will we travel to mars?</h3>
+              <p class="faq__answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+                esse, earum nesciunt iure perspiciatis fugit ipsa quam cum ipsam
+                praesentium?
+              </p>
+              <button class="faq__btn">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="faq__tile">
+              <h3 class="faq__question">Is cereal soup? Why or why not?</h3>
+              <p class="faq__answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+                esse, earum nesciunt iure perspiciatis fugit ipsa quam cum ipsam
+                praesentium
+              </p>
+              <button class="faq__btn">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="faq__tile">
+              <h3 class="faq__question">
+                What’s the best Wi-Fi name you’ve seen?
+              </h3>
+              <p class="faq__answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+                esse, earum nesciunt iure perspiciatis fugit ipsa quam cum ipsam
+                praesentium?
+              </p>
+              <button class="faq__btn">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="faq__tile">
+              <h3 class="faq__question">What’s the best type of cheese?</h3>
+              <p class="faq__answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+                esse, earum nesciunt iure perspiciatis fugit ipsa quam cum ipsam
+                praesentium?
+              </p>
+              <button class="faq__btn">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="faq__tile">
+              <h3 class="faq__question">
+                Is a hotdog a sandwich? Why or why not?
+              </h3>
+              <p class="faq__answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+                esse, earum nesciunt iure perspiciatis fugit ipsa quam cum ipsam
+                praesentium?
+              </p>
+              <button class="faq__btn">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="faq__content">
+            <p class="faq__info faq__info--big">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              itaque odio quia perferendis. Aperiam eius molestiae est facere
+              impedit doloremque?
+            </p>
+            <div class="faq__info faq__info--small">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error,
+              illo consectetur! Mollitia consectetur repellendus a veritatis
+              laboriosam minima iste dicta quia quaerat illum, nobis magni?
+              Dolorum quas unde, blanditiis quae tenetur voluptatem officia
+              atque nam aut non aliquam facilis. Eligendi voluptatum dolorem
+              distinctio adipisci. Quo perferendis rerum dolorem ex illo. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Illo ratione
+              perspiciatis unde culpa voluptates quos facilis esse earum.
+              Placeat sint, iste dolorum sed, autem nemo accusantium dolore
+              vitae repellat aperiam atque recusandae illum. Laborum molestiae
+              similique nobis cumque quia officia!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact section-padding">
+      <h2 class="section-heading">contact</h2>
+      <div class="wrapper">
+        <div class="contact__container">
+          <div class="contact__box change">
+            <div class="contact__form contact__form--1">
+              <a href="#" class="contact__change-btn contact__change-btn--left">write message</a>
+              <div class="contact__direction-box">
+                <i class="fa-solid fa-phone"></i>
+                <h3 class="contact__name">phone</h3>
+                <a href="#" class="contact__link">958 395 395</a>
+              </div>
+              <div class="contact__direction-box">
+                <i class="fa-solid fa-phone"></i>
+                <h3 class="contact__name">phone</h3>
+                <a href="#" class="contact__link">126 374 374</a>
+              </div>
+              <div class="contact__direction-box">
+                <i class="fa-solid fa-envelope"></i>
+                <h3 class="contact__name">Email</h3>
+                <a href="#" class="contact__link">space@contact.com</a>
+              </div>
+              <div class="contact__direction-box">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+                <h3 class="contact__name">location</h3>
+                <a href="#" class="contact__link">NY 123 Main Street</a>
+              </div>
+            </div>
+            <form class="contact__form contact__form--2 ">
+              <a href="#" class="contact__change-btn contact__change-btn--right">look there</a>
+              <input
+                type="text"
+                class="contact__input"
+                placeholder="Your Name..."
+              />
+              <input
+                type="email"
+                class="contact__input"
+                placeholder="Your Email..."
+              />
+              <textarea class="contact__area" placeholder="Your Message:"></textarea>
+              <input
+                type="submit"
+                class="contact__input"
+                value="Send Message"
+                
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#about" class="footer__link link-animation">about</a></li>
+            <li class="footer__item"><a href="#missions" class="footer__link link-animation">missions</a></li>
+            <li class="footer__item"><a href="#gallery" class="footer__link link-animation">gallery</a></li>
+            <li class="footer__item"><a href="#faq" class="footer__link link-animation">faq</a></li>
+            <li class="footer__item"><a href="#contact" class="footer__link link-animation">contact</a></li>
+          </ul>
+    </footer>
+    <script src="./dist/js/main.min.js"></script>
+  </body>
+</html>

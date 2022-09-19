@@ -1,0 +1,80 @@
+@keyframes earthAnim {
+  0% {
+    background-position: 0 center;
+  }
+
+  100% {
+    background-position: 192rem center;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes line {
+  0% {
+    left: -100%;
+    height: 0.3rem;
+  }
+  50% {
+    left: 0;
+    height: 0.3rem;
+  }
+  100% {
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.btn-animation {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: $secondary;
+    border-color: $secondary;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: $white;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.7s ease;
+  }
+
+  &:hover::before {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+.link-animation {
+  display: block;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100%;
+    width: 100%;
+    height: 0.35rem;
+    background-color: $secondary;
+  }
+
+  &:hover::before {
+    animation: line 0.5s forwards;
+  }
+}
